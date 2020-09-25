@@ -1,0 +1,43 @@
+.cards {
+	display: grid;
+	gap: 16px 0;
+	color: $grayishMagenta;
+
+	.card {
+		background: $magenta;
+		padding: 39px 30px;
+		border-radius: $radius;
+		height: 250px;
+
+		&_profile {
+			display: flex;
+			align-items: flex-end;
+			margin-bottom: 28px;
+
+			&_avatar {
+				width: 41px;
+				height: 41px;
+				border-radius: 50%;
+				margin-right: 21px;
+			}
+
+			&_text {
+				font-weight: 700;
+				font-size: 14px;
+
+				&_span {
+					display: block;
+					color: $pink;
+					font-weight: 400;
+					opacity: 0.8;
+					padding-top: 4px;
+				}
+			}
+		}
+
+		&_text {
+			line-height: 1.8;
+			font-size: 12.9px;
+		}
+	}
+}

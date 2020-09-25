@@ -1,0 +1,23 @@
+.rated {
+	text-align: center;
+	margin-bottom: 48.5px;
+
+	&_reviews,
+	&_report,
+	&_bestTech {
+		@include rated-layout;
+
+		&_stars {
+			margin-bottom: 12px;
+
+			img {
+				margin-right: 5px;
+			}
+		}
+
+		&_text {
+			color: $magenta;
+			font-weight: 700;
+		}
+	}
+}
