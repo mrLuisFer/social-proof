@@ -10,7 +10,7 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-		<title>Frontend Mentor | Social proof section</title>
+		<title>Social proof section</title>
 		<!-- Google Fonts -->
 		<link
 			href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
@@ -21,7 +21,8 @@
 		<link rel="stylesheet" href="./css/index.css" />
 	</head>
 	<body>
-		<main>
+		<main class="main">
+			<!-- For every section its a Sass File -->
 			<section class="header">
 				<h1 class="header_title">10,000+ of our users love our products.</h1>
 				<p class="header_text">
@@ -30,9 +31,14 @@
 					services.
 				</p>
 			</section>
+			<!-- Cards with stars  -->
 			<section class="rated">
 				<div class="rated_reviews">
 					<div class="rated_reviews_stars">
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
 						<img src="./public/images/icon-star.svg" alt="star" />
 					</div>
 					<p class="rated_reviews_text">Rated 5 Stars in Reviews</p>
@@ -40,25 +46,83 @@
 				<div class="rated_report">
 					<div class="rated_report_stars">
 						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
 					</div>
 					<p class="rated_report_text">Rated 5 Stars in Report Guru</p>
 				</div>
 				<div class="rated_bestTech">
 					<div class="rated_bestTech_stars">
 						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
+						<img src="./public/images/icon-star.svg" alt="star" />
 					</div>
 					<p class="rated_bestTech_text">Rated 5 Stars in BestTech</p>
 				</div>
 			</section>
-
-			Colton Smith Verified Buyer "We needed the same printed design as the one
-			we had ordered a week prior. Not only did they find the original order,
-			but we also received it in time. Excellent!" Irene Roberts Verified Buyer
-			"Customer service is always excellent and very quick turn around.
-			Completely delighted with the simplicity of the purchase and the speed of
-			delivery." Anne Wallace Verified Buyer "Put an order with this company and
-			can only praise them for the very high standard. Will definitely use them
-			again and recommend them to everyone!"
+			<section class="cards">
+				<!-- Card 1 -->
+				<div class="card">
+					<div class="card_profile">
+						<img
+							class="card_profile_avatar"
+							src="./public/images/image-colton.jpg"
+							alt="Colton"
+						/>
+						<p class="card_profile_text">
+							Colton Smith
+							<span class="card_profile_text_span"> Verified Buyer </span>
+						</p>
+					</div>
+					<p class="card_text">
+						"We needed the same printed design as the one we had ordered a week
+						prior. Not only did they find the original order, but we also
+						received it in time. Excellent!"
+					</p>
+				</div>
+				<!-- Card 2 -->
+				<div class="card">
+					<div class="card_profile">
+						<img
+							class="card_profile_avatar"
+							src="./public/images/image-irene.jpg"
+							alt="Irene"
+						/>
+						<p class="card_profile_text">
+							Irene Roberts
+							<span class="card_profile_text_span"> Verified Buyer </span>
+						</p>
+					</div>
+					<p class="card_text">
+						"Customer service is always excellent and very quick turn around.
+						Completely delighted with the simplicity of the purchase and the
+						speed of delivery."
+					</p>
+				</div>
+				<!-- Card 3 -->
+				<div class="card">
+					<div class="card_profile">
+						<img
+							class="card_profile_avatar"
+							src="./public/images/image-anne.jpg"
+							alt="Anne"
+						/>
+						<p class="card_profile_text">
+							Anne Wallace
+							<span class="card_profile_text_span">Verified Buyer </span>
+						</p>
+					</div>
+					<p class="card_text">
+						"Put an order with this company and can only praise them for the
+						very high standard. Will definitely use them again and recommend
+						them to everyone!"
+					</p>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
