@@ -6,21 +6,31 @@
 		}
 		@media screen and (max-width: 900px) {
 			&_top {
-				display: inline-block;
-				position: absolute;
-				top: 0;
-				right: 0;
-				left: 0;
+				@include pattern-layout-top;
 				width: 100%;
 			}
 
 			&_bottom {
-				display: inline-block;
-				position: absolute;
+				@include pattern-layout-bottom;
 				width: 100%;
-				left: 0px;
-				right: 0;
-				bottom: -605px;
+				bottom: -805px;
+			}
+		}
+	}
+
+	&_pc {
+		&_top,
+		&_bottom {
+			display: none;
+		}
+
+		@media screen and (min-width: 901px) {
+			&_top {
+				@include pattern-layout-top;
+			}
+
+			&_bottom {
+				@include pattern-layout-bottom;
 			}
 		}
 	}

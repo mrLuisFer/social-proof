@@ -4,15 +4,15 @@
 	color: $grayishMagenta;
 
 	@media screen and (min-width: 905px) {
-		display: flex;
+		display: grid;
 		grid-column: span 2;
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: start;
+		gap: 0 34px;
 	}
 
 	.card {
-		background: $magenta;
-		padding: 39px 30px;
-		border-radius: $radius;
-		height: 250px;
+		@include card-layout;
 
 		&_profile {
 			display: flex;
@@ -44,5 +44,15 @@
 			line-height: 1.8;
 			font-size: 12.9px;
 		}
+	}
+}
+
+@media screen and (min-width: 905px) {
+	.card:nth-child(2) {
+		margin-top: 15px;
+	}
+
+	.card:nth-child(3) {
+		margin-top: calc(15px + 15px);
 	}
 }

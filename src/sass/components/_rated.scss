@@ -15,10 +15,9 @@
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			// height: auto;
 			height: 62px;
 			width: 478px;
-			padding-left: 25px;
+			padding-left: 35px;
 		}
 
 		&_stars {
@@ -41,15 +40,17 @@
 	}
 }
 
-.rated_reviews {
-	margin-top: 10px;
-}
+@media screen and (min-width: 905px) {
+	.rated_reviews {
+		// margin-top: 10px;
+	}
 
-.rated_report {
-	margin-left: 45px;
-	margin-right: 0;
-}
+	.rated_report {
+		margin-left: 45px;
+		margin-right: 0;
+	}
 
-.rated_bestTech {
-	margin-left: calc(45px + 45px);
+	.rated_bestTech {
+		margin-left: calc(45px + 45px);
+	}
 }
