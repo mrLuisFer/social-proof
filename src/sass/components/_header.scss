@@ -1,5 +1,11 @@
 .header {
 	text-align: center;
+
+	@media screen and (min-width: 905px) {
+		text-align: left;
+		padding-right: 70px;
+	}
+
 	margin-bottom: 43px;
 
 	&_title {
@@ -8,11 +14,20 @@
 		line-height: 1;
 		margin-bottom: 22px;
 		font-weight: 700;
+
+		@media screen and (min-width: 905px) {
+			font-size: 45px;
+			margin-bottom: 10px;
+		}
 	}
 
 	&_text {
 		font-size: 14.5px;
 		color: $darkGrayishMagenta;
 		font-weight: 500;
+
+		@media screen and (min-width: 905px) {
+			line-height: 1.8;
+		}
 	}
 }

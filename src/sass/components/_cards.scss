@@ -3,6 +3,11 @@
 	gap: 16px 0;
 	color: $grayishMagenta;
 
+	@media screen and (min-width: 905px) {
+		display: flex;
+		grid-column: span 2;
+	}
+
 	.card {
 		background: $magenta;
 		padding: 39px 30px;

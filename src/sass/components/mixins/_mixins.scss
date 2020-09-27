@@ -3,4 +3,9 @@
 	padding: 17px 0;
 	border-radius: $radius;
 	margin-bottom: 14px;
+
+	@media screen and (min-width: 905px) {
+		padding: 15px;
+		margin-right: 0;
+	}
 }

@@ -4,7 +4,7 @@
 		&_bottom {
 			display: none;
 		}
-		@media screen and (max-width: 600px) {
+		@media screen and (max-width: 900px) {
 			&_top {
 				display: inline-block;
 				position: absolute;
@@ -20,7 +20,7 @@
 				width: 100%;
 				left: 0px;
 				right: 0;
-				bottom: -950px;
+				bottom: -605px;
 			}
 		}
 	}
