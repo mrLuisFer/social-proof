@@ -3,4 +3,37 @@
 	padding: 17px 0;
 	border-radius: $radius;
 	margin-bottom: 14px;
+
+	@media screen and (min-width: 905px) {
+		padding: 15px;
+		margin-right: 0;
+		margin-bottom: 19px;
+	}
+}
+
+@mixin card-layout {
+	background: $magenta;
+	padding: 39px 30px;
+	border-radius: $radius;
+	height: 250px;
+	@media screen and (min-width: 900px) {
+		height: 235px;
+		width: 375px;
+	}
+}
+
+@mixin pattern-layout-top {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+@mixin pattern-layout-bottom {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -100;
 }

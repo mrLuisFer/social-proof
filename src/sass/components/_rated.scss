@@ -2,13 +2,31 @@
 	text-align: center;
 	margin-bottom: 48.5px;
 
+	@media screen and (min-width: 905px) {
+		margin-bottom: 0;
+	}
+
 	&_reviews,
 	&_report,
 	&_bestTech {
 		@include rated-layout;
 
+		@media screen and (min-width: 900px) {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			height: 62px;
+			width: 478px;
+			padding-left: 35px;
+		}
+
 		&_stars {
 			margin-bottom: 12px;
+
+			@media screen and (min-width: 900px) {
+				margin-bottom: 0;
+				margin-right: 30px;
+			}
 
 			img {
 				margin-right: 5px;
@@ -19,5 +37,20 @@
 			color: $magenta;
 			font-weight: 700;
 		}
+	}
+}
+
+@media screen and (min-width: 905px) {
+	.rated_reviews {
+		// margin-top: 10px;
+	}
+
+	.rated_report {
+		margin-left: 45px;
+		margin-right: 0;
+	}
+
+	.rated_bestTech {
+		margin-left: calc(45px + 45px);
 	}
 }

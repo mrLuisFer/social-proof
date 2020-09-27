@@ -1,0 +1,12 @@
+.main {
+	padding: 78px 24px;
+	@media screen and (min-width: 905px) {
+		padding: 115px 155px;
+		padding-bottom: 100px;
+		display: grid;
+		padding: 120px 115px;
+		gap: 60px 130px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 250px 280px;
+	}
+}

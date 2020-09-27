@@ -1,0 +1,37 @@
+.pattern {
+	&_mobile {
+		&_top,
+		&_bottom {
+			display: none;
+		}
+		@media screen and (max-width: 900px) {
+			&_top {
+				@include pattern-layout-top;
+				width: 100%;
+			}
+
+			&_bottom {
+				@include pattern-layout-bottom;
+				width: 100%;
+				bottom: -805px;
+			}
+		}
+	}
+
+	&_pc {
+		&_top,
+		&_bottom {
+			display: none;
+		}
+
+		@media screen and (min-width: 901px) {
+			&_top {
+				@include pattern-layout-top;
+			}
+
+			&_bottom {
+				@include pattern-layout-bottom;
+			}
+		}
+	}
+}
