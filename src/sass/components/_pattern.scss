@@ -1,0 +1,27 @@
+.pattern {
+	&_mobile {
+		&_top,
+		&_bottom {
+			display: none;
+		}
+		@media screen and (max-width: 600px) {
+			&_top {
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				width: 100%;
+			}
+
+			&_bottom {
+				display: inline-block;
+				position: absolute;
+				width: 100%;
+				left: 0px;
+				right: 0;
+				bottom: -950px;
+			}
+		}
+	}
+}
