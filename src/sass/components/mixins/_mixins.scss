@@ -22,20 +22,18 @@
 	}
 }
 
-@mixin pattern-layout {
-	&-top {
-		display: inline-block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -100;
-	}
+@mixin pattern-layout-top {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
 
-	&-bottom {
-		display: inline-block;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: -100;
-	}
+@mixin pattern-layout-bottom {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -100;
 }
