@@ -31,6 +31,7 @@
 
 			&_bottom {
 				@include pattern-layout-bottom;
+				height: 100vh;
 			}
 		}
 	}

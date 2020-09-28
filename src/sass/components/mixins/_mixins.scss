@@ -23,7 +23,7 @@
 }
 
 @mixin pattern-layout-top {
-	display: inline-block;
+	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -31,7 +31,7 @@
 }
 
 @mixin pattern-layout-bottom {
-	display: inline-block;
+	display: block;
 	position: absolute;
 	bottom: 0;
 	right: 0;
